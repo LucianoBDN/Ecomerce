@@ -1,0 +1,589 @@
+html {
+    scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+/* NAVBAR */
+.bg-custom {
+    background-color: #c3d9cf;
+
+}
+
+.navbar-nav {
+    padding: 1rem !important;
+    background-color: #eaf2f0;
+    margin-top: 1.3rem;
+}
+
+.mx-auto,
+.d-lg-flex,
+.align-items-center {
+    width: 15%;
+}
+
+.img-logo {
+    max-width: 100% !important;
+}
+
+/* .navbar {
+    position: static;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+  } */
+
+
+
+.navbar-custom {
+    background-color: #eaf2f0;
+    height: 17vh !important;
+
+}
+
+
+
+
+
+
+.btn-custom,
+.navbar-toggler-icon {
+    background-image: url(./images/menu-hamburguesa.svg);
+}
+
+
+
+.custom-toggler {
+    width: 35px;
+}
+
+
+
+.custom-font-weight {
+    font-weight: 600;
+}
+
+
+.navbar-nav .nav-link {
+    color: black;
+
+}
+
+.navbar-nav .nav-link {
+    transition: all 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #bfd5cb;
+}
+
+
+
+/* aca comienza el main */
+
+
+
+/* SLIDER */
+
+
+.banner {
+    width: 100% !important;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    -webkit-box-shadow: -1px 15px 50px 3px rgba(0, 0, 0, 0.56);
+    -moz-box-shadow: -1px 15px 50px 3px rgba(0, 0, 0, 0.56);
+    box-shadow: -1px 15px 50px 3px rgba(0, 0, 0, 0.56);
+}
+
+.slider {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+
+}
+
+.slider ul {
+    height: 100%;
+    display: flex;
+    animation: cambio 9s infinite alternate linear;
+    width: 400%;
+    padding-left: 0;
+}
+
+.slider li {
+    width: 25%;
+    list-style: none;
+}
+
+.slider img {
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.5)
+}
+
+.logo {
+
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 20%;
+}
+
+/* @media only screen and (min-width:320px) and (max-width:768px) { 
+
+    .slider,
+    .slider ul,
+    .slider img {
+        height: 100vh;
+    }
+
+} */
+
+@keyframes cambio {
+    0% {
+        margin-left: 0;
+    }
+
+    20% {
+        margin-left: 0;
+    }
+
+    25% {
+        margin-left: -100%;
+    }
+
+    45% {
+        margin-left: -100%;
+    }
+
+    50% {
+        margin-left: -200%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+
+    75% {
+        margin-left: -300%;
+    }
+
+    100% {
+        margin-left: -300%;
+    }
+}
+
+
+
+.novedades h1 {
+    margin-top: 50px;
+    text-align: center;
+    font-weight: bold;
+
+
+}
+
+
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2rem;
+    column-gap: 2rem;
+    row-gap: 2rem;
+}
+
+
+.cards-item {
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+}
+
+
+
+.cards-item img {
+    width: 100%;
+    border-radius: 9%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    display: block;
+
+}
+
+.overlay-card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    cursor: pointer;
+    transition: opacity 0.25s;
+    border-radius: 9%;
+}
+
+.overlay-card:hover {
+    opacity: 1;
+}
+
+.overlay-card>* {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.overlay-card:hover>* {
+    transform: translateY(0);
+}
+
+.descripcion {
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-align: center;
+    padding: 0.7rem;
+}
+
+
+
+
+
+.c-marcas {
+    display: flex;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    font-weight: 700;
+    padding-top: 50px;
+
+}
+
+.img-marcas {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    justify-content: space-evenly;
+    padding-bottom: 40px;
+
+
+}
+
+.img-marcas img {
+    width: 10%;
+    height: auto;
+    cursor: pointer;
+
+
+}
+
+
+
+
+
+/* aca comienza el footer */
+
+
+.custom-accordion-item .accordion-button:focus {
+    outline: none;
+}
+
+
+.h4-redes {
+    display: flex;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    font-weight: 700;
+    padding-top: 15px;
+
+}
+
+
+.custom-button:focus {
+    border-color: red;
+
+}
+
+
+.icons-redes {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 10px;
+}
+
+.icons-redes i {
+
+    /* display: flex;
+    justify-content: center; */
+
+    padding-left: 10px;
+    padding-top: 20px;
+    cursor: pointer;
+}
+
+.fa-brands {
+    font-size: 30px;
+}
+
+/* .fa-brands:hover{
+    font-size: 25px;
+ } */
+
+.icons-redes i a {
+    color: black;
+    margin-left: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+}
+
+.copyright {
+    color: white;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    font-size: 12px;
+    color: #212b37;
+}
+
+
+/* CONTACTO */
+
+
+.container {
+    padding-top: 179px;
+    height: 100%;
+}
+
+.bg-custom-contacto .contacto {
+    padding: 90px 0;
+    background-color: #bfd5cb;
+}
+
+.contacto-formulario h5 {
+    padding: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+}
+
+.container .form-control {
+    background-color: #d3e4dc;
+}
+
+.container .form-control:focus {
+    background-color: #c7d6cf;
+}
+
+
+.footer-home {
+    height: 10vh;
+}
+
+.btn-oscuro {
+    display: inline-block;
+    font-size: 15px;
+    padding: 12px 23px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    background: #4d4d4d;
+    border: none;
+    color: white;
+}
+
+.btn-oscuro:hover {
+    background-color: #ffffff;
+    border: 1px solid;
+    color: #c7d6cf;
+}
+
+form label {
+    display: inline-block;
+    margin-bottom: 6px;
+    font-weight: 300;
+
+
+}
+
+form .formulario-cuadros {
+    margin-bottom: 16px;
+
+
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 7px 12px;
+    line-height: 1.5;
+    border: none;
+    border-radius: 4px;
+}
+
+#search-button input {
+    display: none;
+}
+
+#search-button button {
+    display: none;
+}
+
+/* PRODUCTOS */
+
+#navbar-products {
+    margin-bottom: 10px;
+}
+
+#button-products {
+    margin-bottom: 10px;
+    background-color: #eaf2f0;
+    color: black;
+    border: none;
+
+}
+
+
+#cards-products {
+    margin-left: 0px;
+}
+
+.custom-tittle {
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.custom-description {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+
+
+
+/* Media query */
+@media (min-width: 801px) {
+    .img-logo {
+        max-width: 80% !important;
+        text-align: center !important;
+        display: flex;
+    }
+
+
+
+    .cards-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 5rem;
+        column-gap: 2rem;
+    }
+
+
+    .logo img {
+        width: 20%;
+    }
+
+
+
+}
+
+@media (min-width: 992px) {
+
+    .img-logo {
+        max-width: 95% !important;
+        text-align: center !important;
+        margin-left: 15px;
+    }
+
+    .logo img {
+        width: 15% !important;
+    }
+
+
+    #carrito {
+        display: none;
+    }
+
+    .nav-item a {
+        font-size: 19px;
+    }
+
+    #search-button input {
+        display: flex;
+    }
+
+    #search-button button {
+        display: flex;
+        border: none;
+        margin-right: 30px;
+    }
+
+    #search-button button img {
+        width: 20px;
+    }
+
+    .navbar-custom {
+        height: auto;
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-bottom: 20px;
+    }
+
+
+
+    .cards-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        padding: 2rem 12rem;
+        column-gap: 2rem;
+    }
+
+    #carouselExampleSlidesOnly {
+        width: 100%;
+        height: 10%;
+    }
+
+    .carousel-item {
+        height: 90vh;
+    }
+
+    .img-fluid {
+        width: 150px;
+    }
+
+
+
+
+
+}
